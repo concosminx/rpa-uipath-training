@@ -1,0 +1,284 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="824,3188" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="42">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Presentations</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="38">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="677.6,3123.2" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+    <ueab:SequenceX.Variables>
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+      <Variable x:TypeArguments="x:Object" Name="TravelAdvice" />
+      <Variable x:TypeArguments="x:Object" Name="Funding_Status" />
+    </ueab:SequenceX.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="634.4,3032" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="Project_Resources\Travel Requests.xlsx">
+      <ueab:ExcelApplicationCard.Body>
+        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+          </ActivityAction.Argument>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="622.4,2757.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="579.2,2666.4" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" SaveAfterEachRow="False">
+              <ueab:ExcelForEachRowX.Body>
+                <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                  <ActivityAction.Argument1>
+                    <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                  </ActivityAction.Argument1>
+                  <ActivityAction.Argument2>
+                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                  </ActivityAction.Argument2>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="567.2,2476.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If Condition="[string.IsNullOrEmpty(CurrentRow.ByField(&quot;Approval status&quot;)) = true]" DisplayName="If the approval status has not been set yet" sap:VirtualizedContainerService.HintSize="524,2385.6" sap2010:WorkflowViewState.IdRef="If_1">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="510.4,2198.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Travel Advisories" sap:VirtualizedContainerService.HintSize="467.2,1107.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="ee37e1ec-5d97-4888-bb5a-49ca613b6a61" Version="V1">
+                            <uix:NApplicationCard.Body>
+                              <ActivityAction x:TypeArguments="x:Object">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                </ActivityAction.Argument>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,885.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="356.8,23.2" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Learn about'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="356.8,216.8" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="ee37e1ec-5d97-4888-bb5a-49ca613b6a61" Text="[CurrentRow.ByField(&quot;Destination&quot;)]" Version="V1">
+                                    <uix:NTypeInto.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/" DesignTimeRectangle="257, 581, 542, 36" ElementType="InputBox" FriendlyName="'INPUT International-Tra…'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='search' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='search' class='tsg-rwd-csi-country-search-input ui-autocomplete-input' aaname='Learn about your destination' /&gt;" Guid="e920722b-10c5-4072-9430-3bb1efb7bfbc" ImageBase64="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" InformativeScreenshot="892456a938da85224b4bdab52c7a8e40.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Travel Advisories' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target DesignTimeRectangle="412, 542, 275, 32" ElementType="Text" FriendlyName="'Learn about'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Learn about your destination' check:innerText='Learn about your destination' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NTypeInto.Target>
+                                  </uix:NTypeInto>
+                                  <uix:NClick ClickType="Single" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="356.8,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee37e1ec-5d97-4888-bb5a-49ca613b6a61" Version="V1">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/" DesignTimeRectangle="803, 580, 39, 35" ElementType="Button" FriendlyName="'BUTTON'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='button' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' class='fa fa-search searchbtn' aaname='Country/Destination Search' /&gt;" Guid="facc4543-7554-440e-b144-00e3bb031583" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACsAAAAnCAYAAACWn7G7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIHSURBVFhH7ZZBS+NAGIb9T/0dhZ79A3oq9LAXxYPeSykoe1j2JEK9lHgQD8seCj21wiLBsmVL1JYchMiUIaFJ6fLuzG6M0+2nSTNNVczAc5q36ZPJzDffBmMM74VcNisi2ctC4U2Ty2ZFLpsVuWxW5LJZ8VFli+jXDfBrCz4L8Nvj8AdXGDdq6Jeo/PKsRNbcOYVwe37MHLgnuzCJ3y6DtqxZ72A6C6VeHAGmrZqWsJ5s6RheELrIEdhwm0cYbBXF3DYGhwZcey4A94uYo56VAC3ZUVf59qyDEbk3N2GrOaeN24VMMjRkv8L1QgE4GO9TmUdq4JEvB69SmXjSy+61MQ3/Xq6WRWUU1K/gn6fbCullqx1E5+rGoDMqZ1YYFsWhW6MzMaSXVVfW/o4+lVGwWk4YFiv7bZvMxJFedm7P2mAVKvPIAcaRq6wIVCYeDdkC7B9KWRpewCKrQXG+anhXsBcyydCSvawYmKhllFt4OCyjF873Kkd4GCiiYlUnzXRbQKInK/jV+Pl00JKMGYfXKJPPikNbVtL73IavrvDCCOAPnw6YrLVphFci+xdxvY6aHUzuuei4ZNcl4A4mXQMjef3uX/z3QssLr042AWZdlDsN4bXKShaERU9xR+Qo1i4riYQD0VPUk1+9ryIrMbc+/WslibnneDXZNOSyWZHLZkUumxWMMfwB8WjVgkAnT70AAAAASUVORK5CYII=" InformativeScreenshot="360be2ff29b631fe8f8c5e216081e1d8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Travel Advisories' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target DesignTimeRectangle="412, 542, 275, 32" ElementType="Text" FriendlyName="'Learn about'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Learn about your destination' check:innerText='Learn about your destination' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAARcAAAAkCAYAAACjSn5jAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAnVSURBVHhe7ZxRa9vIFsf3w/lFsGAChlJTMIQbFkwezEJNufsiCmuWkkJdWBMoKdSFmD4kUAQhZXGh6OFiCIKCoDgEDEVQMIZ8hHNnJI10jjwzdmzLcTfn4QepNB7NnDnnP0czo/5ye3sLDMMwm4bFhWGYUmBxYRimFFhcGIYpBRYXhmFKgcWFYZhSYHFhGKYUWFwYhikFFheGYUqBxYVhmFJgcVmKMQyaFahUEpqnY00Z5l64HkAzHZdKpQmDa00Z5l6g4vLlKAsgHigMi8vOsmPiEn3pQuNX0ZZfG+B6O+AnM+G7T6vgVByoHp7A6IemTEmwuCwFi8vOslPiMoGz33M/qTQHMNaW2yL/6wphydt09EVTpiRYXJZi98RlfNrMx2oXnPi+uAdxsdn+fjIXH44yGxQEhDOXXYfFZWfZMXG5Hyzico+sLy6zCILzDrRqTvo7B2qtDpxdRdry43960P6tlqVqTq0FnfMAohkqh9vR7IN/0Ulmg8oR+HP3BxCGHnQOpTqLf4sZo/12BJGqaxHfAzj7qwX1vbT9ThUaz3owJH0viMv7APzjJlQd+W/Z326hvCKC0OtC63HaNln2tzb0/imKk1m8/Bf59coLf64sIb6P61UU0nX3Eqbq3qgL1ayOOpx8zX8XCbt2W/W0n3KsDqB9PIQxHiuBMdiIP6VjV2j/kRdAP55ZlxDt2QSGx+3UF+RM3AP/qm8Xl+sh9J418j7sCf/Q9CHmpli2Dq1XHoSRKrPY9vPjlfyW2OjFECL/BNqNxOecvSZ0LjR9F1mH7O+BLbaIjTGpLRaJr7Cp/87NnyH8v66L3xVibj1xkSnXoep4kZpQUNzACPyX9UxUitTEQGSNw+3YqyLn14jLXg1qqTPkOND+OEHPNvBtAK3YUTU4ov/fVFnqVI6j6bPTBm+C6pb9fVGbLxfjQP0l6m/p4lJw7r0ujNT19wfa65GwcU1dL+A8FuOQBdx64lIV46v+touLwZ5iLHKfoj5r7cOhaCcWGOELzTk/Snmk+rvY9kuJyyPhs+rvjBp0R6g9kchGHi8RW8TGmCXExRq/DrQ+oPFYIebWEhdiMB3SWdUAXvWMA53QgH6YljUaTCMuJvb7EKbt1BOB91+TYROc52qGtzgVovp6lNUfXbhGIU3AzkTrL0Ncbr+eQD0rK8b2Rl4XNnia/95Rv48uwTUFWkoN9XUdccFYxSXsQ0PzGwry2R8iOPd0ZXJa5yoYCpmdhuor2d/Ftl9KXAzk/nYLwbFpYkpR/m2MhcXiEr5poPIa8IS5QsytIS4hnDzJK26+C2EqheT7EI4eqesOHPlJeWLcJz0IZNloCB3kAO2POjV2xGtIWrd6dqGdvTSFC9/hAXTh0rp4Rd9T/0ifPX6P6shmcupUzqEwomyPSCkv/8xn3sqTk9S4hvLENmbxsotLct0Y0EZG0EW27nwW12bCBkhE3ItpXJbULTK4WPTF6+8QZw5Obt+1xEVkBUOS8emZfNC0SVwPxXjpMpepEPes/F4HLtNnkPIie5nI+mfCD9U1Mcn1rpKywd/1vA7UL5vtlxqvPRc82U5p0yX8p/53ENcRfe6gLF4E/nf1XMuai0lcCmNfk69q0keFiOMMriHiOi6/QsytLi7fPWgbymID21NdQ1BpnRJhuv+tDwfZ9UXiaGCJgCB98o+Qc6flf4iZP7smBBYNNnF6Z3H9mxMXWVeeqdXfCKch2Yxy1ilcuuoaymYkxX7pJo47iovdP3KIHfCakSF4Rq9R0OI+kPJpm4gvN6Drp5OcgbXFBf9GCEZ2HfuyDmMWsoK4FDNZFCvhGySqSoBXiLnVxYU02gIeWLlA9dZFC5yUtcXFaHwz0dUZdJ8dQE279qLqtgSE7pm2dpAF1MX1b1JciLA99SD82NbUYQt+mv0oJ962uDgvTWKR25rYzYgqPxGvh/QV2Wm0oXc+gvE0fQ5io+Ji8/XrIZy4aLOBgP1qBXGxPDfS+cUKMbc9cbEuUCVsW1zGH1oL1kVU3RsUF3Jvcf2bFBc6Q7vgPld/42fagp/e2564TGBwaPiNwdZ3ExfBLIQzt6HxBwcOjn2ym7kNcZGL0XXruhf2q82KC7n3M4hL+A4tHmXv2QZHs3Xcdt/S0Tlkip8NHlrX0dZtCQjdM23tuMfMpficHLwFbQv+f2vmgpgEMDztQLOQLSy1gC3YjLiE0N9X15L1kIn0TaNf/dsylxtLAM1BdyUO3iuHMjiapePW+7agLkKCvANDNTNp67YExE+05iIhv1OgLeifYs3lz2F+zyQuL3NxIH24A2SxMlts3YK4kAzzAPrqSMQmxWVTay6liEthFqs99/L30+kEAq8LvU9qYayw5el6SZo5uSS7RfcnLukOwWxaWP3WB4Tz7Cw5I7Hkan++WxRAD13PFyZp2p/Z59oDF+0uYWelIoXEcRHEqRKKwUcCAe0WBcfYNvnOAN3JcZOF4dkYvOd4O1Vvy2XFRdsmcd20W0RmX1H+ZJSfwZiGPvRfDZIxkf/GttzvQZD68eT8j/z6f/qZINhsv3lxccD1kjiafMK7Rdi/Czu32eQtMMWEabdI+hyKyXjhX5bfrLiYyCsgBtMhBlWVJa9FBrYqLuS1yIQ+IEzgcy4T4dz29ZyqmGGSrV8J2d0wgUWAZEya+0bopCBRW9AZE+HcC2xTFc/KdmyIUJvQ23JZcSnjnEtNvF7FfVimv/E5l7Rui+3LeC3Sg/2bTk7kviUmRq8XnKXB5bctLvEJv9/Ni7TkJKdc0MWzcIwDDhrU7F16G+IikAM+5yTFE5/xYTMaELVHupOi65zQFci2zzm4I55l2FLVBc9S4iIDAI8ZPi+Rc5cTurF9NCc9HWGnu6wv2THYk5x2pWNuXxSlJ1Cti/vZCd0Ui+03Iy4G+xPfzF9L5+qPSW1hi4lVT+huRVwkIl0OPc33Qqf+/PcbN0PottJy8qvR0wB8/H6nPXWIOqJYoaN6RKp/6kIjXryT36p0YRiKtDCrQ6Skn+SsTgPi6PMEhq/wt0Ud8NTp4mL98rsr9G1RdV/3bVFCdDUAN/veJLFPgJ2mKB7hGbj7ad3ym6i3yWGrRZC0vrBmgJHb9B38bZHtu5wogIHabZFtcQcQiP7k46HGaVVxEQhf89/ib4vEeN0E6JVAM+bXPgw03455X+fPstypvwbbb0pcJJPP3eybPafhwuDKJ68/2QE3ibTNcSs7UuHUOnApJ41FMZF+r2X9fkmytrgwDwLs6Nk7NcNsGBaXhwb5BKFKP5ZjmA3C4vKAICm7hGxBM8xmYXF5QFBxccC9sH9DwzDrwOLygFDiEv/nRB6vtTDlwuLCMEwpsLgwDFMKLC4Mw5TALfwftg9VLrNDW+gAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NClick.Target>
+                                  </uix:NClick>
+                                  <uix:NGetText DisplayName="Get Text 'Travel.State.Gov &gt;'" sap:VirtualizedContainerService.HintSize="356.8,156" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="ee37e1ec-5d97-4888-bb5a-49ca613b6a61" Version="V1">
+                                    <uix:NGetText.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Netherlands.html" DesignTimeRectangle="109, 861, 1170, 27" FriendlyName="'Exercise increased'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='csi-mainbody' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='csi-mainbody' tag='DIV' class='tsg-rwd-alert-teaser' aaname='' /&gt;" Guid="7057dba6-1ce0-47c2-9302-98d83295cf9e" ImageBase64="" InformativeScreenshot="4a0add5a6e08657e8f73a6aae8af9b49.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Netherlands International Travel Information' /&gt;" SearchSteps="Selector" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target DesignTimeRectangle="9, 639, 1329, 35" FriendlyName="'Travel.State.Gov &gt;'" FullSelectorArgument="&lt;webctrl parentid='content' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='content' tag='DIV' type='' class='tsg-rwd-single-page-breadcrumb breadcrumb' aaname='   &amp;gt;    &amp;gt;  &amp;gt; ' check:innerText='Travel.State.Gov &amp;gt; International Travel &amp;gt; Country Information &amp;gt; Netherlands International Travel' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NGetText.Target>
+                                    <uix:NGetText.Text>
+                                      <OutArgument x:TypeArguments="x:Object">[TravelAdvice]</OutArgument>
+                                    </uix:NGetText.Text>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </uix:NGetText>
+                                  <uix:NNavigateBrowser Action="CloseTab" DisplayName="Navigate Browser - Close Tab" sap:VirtualizedContainerService.HintSize="356.8,80.8" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V1" />
+                                </Sequence>
+                              </ActivityAction>
+                            </uix:NApplicationCard.Body>
+                            <uix:NApplicationCard.TargetApp>
+                              <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKESURBVDhPXVMNTxpRELz/n5gm/bRpbaqmgtYTKRwiipxaW0A8BSkiqHyJ8rWgiAhUO91dgmlKsuHdvZ1582b2DPk93FzRvzW4vdaK7W7Q/o8wDbs1ff6/bwLucoGbcNsowXR/RtrZw+NDCxuBFYSDXjw9EJyYDXNxFj2qgMkgGMHq6aO7Oh7vm0xQhB3y4SJ7CIxu8NRvMbjF6w6/O8KeHcRdq6y9ghGswQvKpmK8uYZ+pwoM20qw9m1JFUiFLBOhgAknGtEee8OHs8yBkJDxu9cgJ2rDu/wFvfYl6pVTzM28xbuXU5h+Na73b15g+vUUAt4ldFmB6Z5FMvEdglUFIkeYxQdrdRHzn6ZVbjKxq40RPlHehYOrAmIfLjHq1ccKcul9vcKIwULiW1ngcqlR4gEGbTQu81iY+4AtNlQOk73M0U++qkPG5toqhawV3RACy7vI9//K6yttlLrnq1ULGSbKPSfg97ixvekng2OhSTT3TBD0LWPdbyrZpFn+MSBW1JzEx2lUxA8y+u0qCbO8FFDI8mCT7yogKfHlpl5AZN2LA05BnkWRmM0HksGRkXt+BrVSFoPutQ6OuC2k0ixVuUir8zthS1VUztNwzX9E+eyYjHbtgoq5lE6YbDrxbfg5CZ/HpUQB9kRMtXidScbwhwdLoiycHrGyIhkskySaVjXPw5FAt1lGfC/MA+QZFxvMRiObiqv03HEcfKjGKVgdZXk44Sh97GynVtCBkivVyqdajUpeU2pynKLmLOMogWDHHxObJcMhzENuPD9xsMWmiam3zZIqKOVT6gddn+OOryumC3byRernyg1axVySDuM7Ei916gU6iNpULfx63pdePd0wjL9ti3qOAcXCsQAAAABJRU5ErkJggg==" InformativeScreenshot="d02f03f9cd3e3574afe95e5399727159.png" Selector="&lt;html app='chrome.exe' title='Travel Advisories' /&gt;" Url="https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/" />
+                            </uix:NApplicationCard.TargetApp>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NApplicationCard>
+                          <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="467.2,626.4" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="Project_Resources\Funding Overview.xlsx">
+                            <ueab:ExcelApplicationCard.Body>
+                              <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel2" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="455.2,352" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ueab:VLookupX ColumnIndex="3" DisplayName="VLookup" ExactMatch="True" sap:VirtualizedContainerService.HintSize="412,260.8" sap2010:WorkflowViewState.IdRef="VLookupX_1" Label="[CurrentRow.ByField(&quot;Project code&quot;)]" SourceRange="[Excel2.Sheet(&quot;Sheet1&quot;).Range(&quot;A2:C9&quot;)]">
+                                    <ueab:VLookupX.Value>
+                                      <OutArgument x:TypeArguments="x:Object">[Funding_Status]</OutArgument>
+                                    </ueab:VLookupX.Value>
+                                  </ueab:VLookupX>
+                                </Sequence>
+                              </ActivityAction>
+                            </ueab:ExcelApplicationCard.Body>
+                          </ueab:ExcelApplicationCard>
+                          <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="467.2,293.6" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="[string.Format(&quot;{0}has requested to travel to the {1}, which has the following travel advice: {2}. The project funding status is: {3}.{4}{5}Whould you like to approve this travel request? &quot;, CurrentRow.ByField(&quot;Requestor &quot;), CurrentRow.ByField(&quot;Destination&quot;), TravelAdvice.ToString, Funding_Status.ToString, Environment.NewLine, Environment.NewLine)]" OptionsString="Approved;Not approved" Title="Approve travel request ?">
+                            <ui:InputDialog.Result>
+                              <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField("Approval status")]</OutArgument>
+                            </ui:InputDialog.Result>
+                          </ui:InputDialog>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap2010:WorkflowViewState.IdRef="Sequence_3">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelForEachRowX.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ueab:ExcelForEachRowX>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelApplicationCard.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ueab:ExcelApplicationCard>
+  </ueab:SequenceX>
+</Activity>
